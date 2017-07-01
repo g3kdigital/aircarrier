@@ -1,109 +1,6 @@
 <?php get_header(); ?>
 
-<div id="inicio" class="contenedor principal ">
-  <section class="menu arriba">
-    <div class="grupo config">
-      <span>LEER EN:</span> 
-      <b class="icon español">ESP</b> 
-      <b class="icon english">ENG</b>
-    </div>
-    <div class="grupo redes">
-      <em>Siguenos</em>
-      <a href="https://www.facebook.com/aircarrier/" class="link facebook" target="_blank">
-        <b class="icon-fa"></b>
-      </a>
-      <a href="https://twitter.com/AIRCARRIERZF" class="link twitter" target="_blank">
-        <b class="icon-fa"></b>
-      </a>
-      <a href="https://www.youtube.com/channel/UCW_1bCoyGbqFR3uihCIw0wA" class="link youtube" target="_blank">
-        <b class="icon-fa"></b>
-      </a>
-      <a href="https://co.linkedin.com/in/aircarrierzf" class="link linkedin" target="_blank">
-        <b class="icon-fa"></b>
-      </a>
-      <a href="https://skype.com" class="link skype" target="_blank">
-        <b class="icon-fa-non">
-        PBX: 57 1 4 924830
-        </b>
-      </a>
-    </div>
-  </section>
-  <nav class="menu superior">
-    <a href="index.html" class="grupo img aircarrier logistic">
-      <img alt="logosimbolo aircarrier" class="logosimbolo logo"
-       src="img/logosimbolo-aircarrier.png" />
-      <img alt="logotipo aircarrier logistic" class="logotipo logo" 
-       src="img/logotipo-aircarrier-logistic.png" /> 
-    </a>
-    <a href="index.html" class="grupo img aircarrier industrial izquierda">
-      <img  alt="logosimbolo aircarrier" class="logosimbolo logo"
-       src="img/logosimbolo-aircarrier.png" />
-      <img alt="logotipo aircarrier industrial" class="logotipo logo"
-       src="img/logotipo-aircarrier-industrial.png" />
-    </a>
-    
-    <button class="btn menu-burger">
-      <i class="fa fa-bars icon burger" aria-hidden="true"></i>
-      <i class="fa fa-times icon close" aria-hidden="true"></i>
-    </button>
-    
-    <ul class="grupo enlinea enlaces">      
-      <li class="item enlineado link01">
-        <a href="index.html" class="enlace">
-          INICIO
-        </a>
-      </li>      
-      <li class="item enlineado link02">
-        <a href="comercio-exterior.html" class="enlace">
-          COMERCIO <br />
-          EXTERIOR
-        </a>
-      </li>
-      <li class="item enlineado link03">
-        <a href="logistica-internacional.html" class="enlace">
-          LOGÍSTICA DE <br />
-          TRANSPORTE
-        </a>
-      </li>
-      <li class="item enlineado link04">
-        <a href="zona-franca.html" class="enlace">
-          ZONA <br />
-          FRANCA
-        </a>
-      </li>
-      <li class="item enlineado link05">
-        <a href="proyectos-especiales.html" class="enlace">
-          PROYECTOS <br />
-          ESPECIALES
-        </a>
-      </li>
-      <li class="item enlineado link06">
-        <a href="cotice-servicios.html" class="enlace">
-          COTICE SUS <br />
-          SERVICIOS
-        </a>
-      </li>
-      <li class="item enlineado link07">
-        <a href="servicio-cliente.html" class="enlace">
-          SERVICIO <br />
-          AL CLIENTE
-        </a>
-      </li>
-      <li class="item enlineado link08">
-        <a href="#contacto" class="enlace contacto">
-          CONTÁCTENOS
-        </a>
-      </li>
-    </ul>  
-
-    <a href="index.html" class="grupo img aircarrier industrial derecha">
-      <img  alt="logosimbolo aircarrier" class="logosimbolo logo"
-       src="img/logosimbolo-aircarrier.png" />
-      <img alt="logotipo aircarrier industrial" class="logotipo logo"
-       src="img/logotipo-aircarrier-industrial.png" />
-    </a>   
-  </nav>
-  <header class="banner">
+  <section class="banner">
     <div class="grupo-video">
       <video class="video-background" loop muted preload autoplay poster="img/video-cover-aircarrier.jpg">
         <source src="video/aircarrier-video.mp4" type="video/mp4">
@@ -118,7 +15,7 @@
         </button>
       </h3>
     </div>
-  </header>
+  </section>
 
   <main class="contenido inicio">
     <section class="seccion servicios">

@@ -1157,7 +1157,13 @@ a {
   height: 2rem;
 }
 
-.grupo.redes .link {
+.grupo.redes .menu-redes-sociales,
+.grupo.redes .menu-redes-sociales .menu-item {
+  display: inline-block;  
+}
+
+.grupo.redes .link,
+.grupo.redes .menu-redes-sociales .menu-item {
   padding: 0 .1em 0 0.3em;
   font-size: 1.2em;
   -webkit-transition: all ease .3s;
@@ -1168,6 +1174,7 @@ a {
   padding-right: 0.5em;
 }
 
+.grupo.redes .menu-redes-sociales .menu-item:hover .icon-fa::before,
 .grupo.redes .link:hover .icon-fa::before {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);

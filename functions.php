@@ -11,12 +11,16 @@ function replace_jquery() {
 }
 add_action('init', 'replace_jquery');
 
+
 // Load HTML5 Blank scripts (header.php)
-function html5blank_header_scripts()
+function misRecursos()
 {
-    wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
-    wp_enqueue_script( 'codigo', get_template_directory_uri() . '/js/codigo.js', array ( 'jquery' ), 1.1, true);
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
+ 	wp_enqueue_script( 'codigo', get_template_directory_uri() . '/js/codigo.js', array ( 'jquery' ), 1.1, true);
 }
+add_action( 'wp_enqueue_scripts', 'misRecursos' );
 
-?>
-
+register_nav_menus( array(
+  'menu_super' => 'Menú Redes Sociales',
+  'menu_main' => 'Menú Principal',
+));	
