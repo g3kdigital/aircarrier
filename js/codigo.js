@@ -29,6 +29,8 @@ var video_youtube = $(".video.youtube");
 var video_intro = $(".video .embebido");
 var clase_on = "activo";
 var plugin_divisas = $("div#gcw_mainFOWxbzZ8g>style");
+var menu_enlaces = $("ul#menu-menu-principal .item a");
+var mutearvideo = $(".mejs-mediaelement");
 
 //var link_contacto = $(".enlace.contacto");
 
@@ -36,7 +38,8 @@ var plugin_divisas = $("div#gcw_mainFOWxbzZ8g>style");
 
 web.ready(function(){
   
-  
+  menu_enlaces.addClass("enlace");
+  mutearvideo.attr("muted");
      
   /*$('.formulario.logistica.internacional').on("submit", function(){
     alert(this);

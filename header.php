@@ -47,7 +47,7 @@ harriet smith, storytelling, day, life, dog, birth, puppies, happy" />
 	        $args = array(
 	          'theme_location' => 'menu_super',
 	          'container' => 'ul',
-	          'menu_class' => 'menu-redes-sociales',
+	          'menu_class' => 'menu-redes-sociales ',
 	          );
 	        wp_nav_menu( $args );
         ?>	
@@ -79,13 +79,18 @@ harriet smith, storytelling, day, life, dog, birth, puppies, happy" />
 
 
 	<?php
-	    $args = array(
-	      'theme_location' => 'menu_principal',
-	      'container' => 'ul',
-	      'menu_class' => 'grupo enlinea enlaces',
-	      );
-	    wp_nav_menu( $args );
-	?>	
+		/**
+		* Displays a navigation menu
+      	**@param array $args Arguments
+      	*/
+       $args = array(
+        'theme_location' => 'menu_main',
+        'container' => 'ul',
+        'menu_class' => 'grupo enlinea enlaces',
+        );
+
+       wp_nav_menu( $args );
+     ?>	
 
     <a href="index.html" class="grupo img aircarrier industrial derecha">
       <img  alt="logosimbolo aircarrier" class="logosimbolo logo"

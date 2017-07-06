@@ -21,6 +21,6 @@ function misRecursos()
 add_action( 'wp_enqueue_scripts', 'misRecursos' );
 
 register_nav_menus( array(
-  'menu_super' => 'Menú Redes Sociales',
   'menu_main' => 'Menú Principal',
+  'menu_super' => 'Redes Sociales',
 ));	
