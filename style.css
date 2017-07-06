@@ -1181,6 +1181,8 @@ a {
 }
 
 
+
+
 /*===================== = MENU SUPERIOR*/
 
 .aircarrier.img {
@@ -1337,6 +1339,23 @@ a.industrial.izquierda {
   right: 0;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
+}
+
+.grupo-video .wp-video,
+.grupo-video .mejs-container,
+.grupo-video .mejs-inner,
+.grupo-video .mejs-mediaelement,
+.grupo-video .mejs-mediaelement,
+.grupo-video .wp-video-shortcode video, 
+.grupo-video video.wp-video-shortcode
+ {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 

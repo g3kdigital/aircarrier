@@ -86,55 +86,6 @@ harriet smith, storytelling, day, life, dog, birth, puppies, happy" />
 	      );
 	    wp_nav_menu( $args );
 	?>	
-    
-    <ul class="grupo enlinea enlaces">      
-      <li class="item enlineado link01">
-        <a href="index.html" class="enlace">
-          INICIO
-        </a>
-      </li>      
-      <li class="item enlineado link02">
-        <a href="comercio-exterior.html" class="enlace">
-          COMERCIO <br />
-          EXTERIOR
-        </a>
-      </li>
-      <li class="item enlineado link03">
-        <a href="logistica-internacional.html" class="enlace">
-          LOGÍSTICA DE <br />
-          TRANSPORTE
-        </a>
-      </li>
-      <li class="item enlineado link04">
-        <a href="zona-franca.html" class="enlace">
-          ZONA <br />
-          FRANCA
-        </a>
-      </li>
-      <li class="item enlineado link05">
-        <a href="proyectos-especiales.html" class="enlace">
-          PROYECTOS <br />
-          ESPECIALES
-        </a>
-      </li>
-      <li class="item enlineado link06">
-        <a href="cotice-servicios.html" class="enlace">
-          COTICE SUS <br />
-          SERVICIOS
-        </a>
-      </li>
-      <li class="item enlineado link07">
-        <a href="servicio-cliente.html" class="enlace">
-          SERVICIO <br />
-          AL CLIENTE
-        </a>
-      </li>
-      <li class="item enlineado link08">
-        <a href="#contacto" class="enlace contacto">
-          CONTÁCTENOS
-        </a>
-      </li>
-    </ul>  
 
     <a href="index.html" class="grupo img aircarrier industrial derecha">
       <img  alt="logosimbolo aircarrier" class="logosimbolo logo"

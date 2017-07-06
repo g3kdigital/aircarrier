@@ -2,12 +2,8 @@
 
   <section class="banner">
     <div class="grupo-video">
-      <video class="video-background" loop muted preload autoplay poster="img/video-cover-aircarrier.jpg">
-        <source src="video/aircarrier-video.mp4" type="video/mp4">
-        <source src="video/aircarrier-video.webm" type="video/webm">
-        <source src="video/aircarrier-video.ogv" type="video/ogg">
-       Tu navegador no soporta HTML5 Video  
-      </video>
+      <?php  echo do_shortcode("[video loop='on' preload='metadata' autoplay='on' volume='0' mp4='http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/video/aircarrier-video.mp4' ogg='http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/video/aircarrier-video.ogv' webm='http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/video/aircarrier-video.webm']");
+      ?>
       <h3 class="titulo video">
         soluciones a la medida de tus necesidades
         <button class="btn video">
