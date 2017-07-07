@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "aircarrier";
+  src:url("fonts/aircarrier.eot");
+  src:url("fonts/aircarrier.eot?#iefix") format("embedded-opentype"),
+    url("fonts/aircarrier.woff") format("woff"),
+    url("fonts/aircarrier.ttf") format("truetype"),
+    url("fonts/aircarrier.svg#aircarrier") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+[aczicon]:before {
+  font-family: "aircarrier" !important;
+  content: attr(aczicon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="aczicon-"]:before,
+[class*=" aczicon-"]:before {
+  font-family: "aircarrier" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aczicon-comercio:before {
+  content: "\61";
+}
+.aczicon-logistica:before {
+  content: "\6c";
+}
+.aczicon-proyectos:before {
+  content: "\7a";
+}
+.aczicon-zonafranca:before {
+  content: "\70";
+}
+.aczicon-latam:before {
+  content: "\41";
+}
+.aczicon-colombia:before {
+  content: "\43";
+}
+
+/*DISEÑO: EDGAR GUTIERREZ (G3Kdigital)
+gutierrezedgar.com
+creativo@gutierrezedgar.com
+*/)

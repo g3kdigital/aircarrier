@@ -113,8 +113,7 @@ body,
 .formulario.comercio .titulo,
 .diligenciar.formularios .formulario.comercio .checkbox .trigger-politica, 
 .diligenciar.formularios .pregunta .entrada:valid:hover,
-.articulos.industrial .nombre-empresa b,
-.servicio.comercio .icono
+.articulos.industrial .nombre-empresa b
 {    color: rgb(0, 88, 168);   }
 
 .color2,
@@ -749,10 +748,6 @@ body::after,
 .grupo-entrada::before,
 .grupo-entrada::after{
   font-family: 'FontAwesome';
-}
-
-.aczfont::before{
-  color: inherit;
 }
 
 

@@ -882,6 +882,8 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://gutierrezedgar.com/aircarrier/iconos/g3k-aircarrierzfont.css">-->
+  <link rel="stylesheet" href="http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/css/g3k-aircarrierzfont.css">
 
 
 

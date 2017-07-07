@@ -25,26 +25,31 @@
 
         ( 
           'post_type' => 'servicio',
-          'showposts' => 4
+          'showposts' => 4,
+          'order'    => 'ASC'
          ));
 
        ?>
       <?php if(have_posts()): while (have_posts()) : the_post(); ?>
 
-        <article class="servicio comercio">
+        <article class="servicio <?php echo the_field('clase_servicio'); ?>">
           <figure class="icono svg">
             <?php echo the_field('icono'); ?>
+            <span class="azcfont <?php echo the_field('clase_icono-aircarrier'); ?> "></span>
+            <i class="aczfont aczicon-logistica"></i>
           </figure>
           <h4 class="titulo">
             <?php echo the_title(); ?>
           </h4>
-          <a href="<?php echo the_permalink(); ?>" class="enlace">            
+          <a href="<?php echo the_permalink(); ?>" class="enlace">
+            <?php echo the_field('texto_enlace'); ?>          
           </a>
         </article>
 
       <?php endwhile; endif; ?>
 
       <?php wp_reset_query(); ?>
+
 
     </section>
     <section class="seccion equipo">
