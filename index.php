@@ -30,13 +30,12 @@
          ));
 
        ?>
-      <?php if(have_posts()): while (have_posts()) : the_post(); ?>
+      <?php if(have_posts()): while (have_posts()) : the_post(); ?>        
 
         <article class="servicio <?php echo the_field('clase_servicio'); ?>">
           <figure class="icono svg">
             <?php echo the_field('icono'); ?>
-            <span class="azcfont <?php echo the_field('clase_icono-aircarrier'); ?> "></span>
-            <i class="aczfont aczicon-logistica"></i>
+            <span class="aczfont <?php echo the_field('clase_icono'); ?> "></span>
           </figure>
           <h4 class="titulo">
             <?php echo the_title(); ?>
@@ -49,7 +48,6 @@
       <?php endwhile; endif; ?>
 
       <?php wp_reset_query(); ?>
-
 
     </section>
     <section class="seccion equipo">

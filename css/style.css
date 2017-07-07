@@ -113,7 +113,8 @@ body,
 .formulario.comercio .titulo,
 .diligenciar.formularios .formulario.comercio .checkbox .trigger-politica, 
 .diligenciar.formularios .pregunta .entrada:valid:hover,
-.articulos.industrial .nombre-empresa b
+.articulos.industrial .nombre-empresa b,
+.servicio.comercio .icono 
 {    color: rgb(0, 88, 168);   }
 
 .color2,
@@ -128,7 +129,8 @@ body,
 .servicio.zonafranca:hover .enlace,
 .formulario.servicio-cliente .pregunta .entrada:hover,
 .formulario.z-franca .titulo,
-.diligenciar.formularios .formulario.zonafranca .checkbox .trigger-politica{
+.diligenciar.formularios .formulario.zonafranca .checkbox .trigger-politica,
+.servicio.zonafranca .icono {
   color: rgb(46, 49, 145);
 }
 
@@ -142,55 +144,14 @@ body,
 .botones .boton.inventario::before,
 .enlace.externo.inventario::before,
 .servicio.proyectos:hover .enlace,
-.diligenciar.formularios .pregunta .etiqueta{
+.diligenciar.formularios .pregunta .etiqueta,
+.servicio.proyectos .icono {
   color: rgb(91, 107, 127);
 }
 
 .color5,
 .color-azul-blanco {
   color: rgb(167, 223, 248);
-}
-
-.color6,
-.color-azul-claro,
-.menu.arriba,
-.ventajas .logistica .titulo,
-.ventajas .logistica .item::before,
-.grupo.redes a,
-.valores .grupos .titulo,
-.servicio-cliente .etiqueta.respuesta,
-.formulario.servicio-cliente .pregunta .entrada::-webkit-input-placeholder,
-.diligenciar.formularios .pregunta .entrada,
-.diligenciar.formularios pregunta .entrada:valid{
-  color: rgb(127, 171, 211);
-}
-
-.color6,
-.color-azul-claro,
-.menu.arriba,
-.ventajas .logistica .titulo,
-.ventajas .logistica .item::before,
-.grupo.redes a,
-.valores .grupos .titulo,
-.servicio-cliente .etiqueta.respuesta,
-.formulario.servicio-cliente .pregunta .entrada::-moz-placeholder,
-.diligenciar.formularios .pregunta .entrada,
-.diligenciar.formularios pregunta .entrada:valid{
-  color: rgb(127, 171, 211);
-}
-
-.color6,
-.color-azul-claro,
-.menu.arriba,
-.ventajas .logistica .titulo,
-.ventajas .logistica .item::before,
-.grupo.redes a,
-.valores .grupos .titulo,
-.servicio-cliente .etiqueta.respuesta,
-.formulario.servicio-cliente .pregunta .entrada:-ms-input-placeholder,
-.diligenciar.formularios .pregunta .entrada,
-.diligenciar.formularios pregunta .entrada:valid{
-  color: rgb(127, 171, 211);
 }
 
 .color6,
@@ -219,7 +180,8 @@ body,
 .alcance .btn,
 .seccion.equipo b,
 .diligenciar.formularios .formulario.logistica .checkbox .trigger-politica,
-.articulos.logistic .nombre-empresa b{
+.articulos.logistic .nombre-empresa b,
+.servicio.logistica .icono {
   color: rgb(0, 183, 237);
 }
 
@@ -239,132 +201,6 @@ body,
 .ventajas .bodega .item::before {
   color: rgb(166, 168, 171);
 }
-
-.color10,
-.color-blanco,
-.enlace:hover,
-.menu-burger,
-.activo.enlaces .enlace,
-.titulo.video,
-.btn.video:focus .icono,
-.servicios .titulo.principal,
-.servicio:hover .titulo,
-.contenido .enlace,
-.equipo .titulo,
-.titulo.principal,
-.piepagina,
-.piepagina .parrafo,
-.piepagina .titulo,
-.piepagina .etiqueta,
-.piepagina .enlace,
-.pregunta .entrada:valid,
-.pregunta .entrada:valid:hover,
-.pregunta .entrada:hover::-webkit-input-placeholder,
-.enviar::before,
-.botones .boton.cotiza,
-.botones .boton.inventario,
-.cover .titulo,
-.cover .parrafo,
-.enlace.externo.inventario,
-.link-01 .menu .enlaces .item:nth-child(1) a,
-.link-02 .menu .enlaces .item:nth-child(2) a,
-.link-03 .menu .enlaces .item:nth-child(3) a,
-.link-04 .menu .enlaces .item:nth-child(4) a,
-.link-05 .menu .enlaces .item:nth-child(5) a,
-.link-06 .menu .enlaces .item:nth-child(6) a,
-.link-07 .menu .enlaces .item:nth-child(7) a,
-.link-08 .menu .enlaces .item:nth-child(8) a,
-.modal-content .encabezado .btn,
-.consejos .cover .icono::before,
-.politicas .cover .icono::before,
-.formulario.servicio-cliente .enviar,
-.seleccion.formulario.activo .titulo,
-.alcance .activo.btn
-{  color: rgb(250, 250, 250);  }
-
-.color10,
-.color-blanco,
-.enlace:hover,
-.menu-burger,
-.activo.enlaces .enlace,
-.titulo.video,
-.btn.video:focus .icono,
-.servicios .titulo.principal,
-.servicio:hover .titulo,
-.contenido .enlace,
-.equipo .titulo,
-.titulo.principal,
-.piepagina,
-.piepagina .parrafo,
-.piepagina .titulo,
-.piepagina .etiqueta,
-.piepagina .enlace,
-.pregunta .entrada:valid,
-.pregunta .entrada:valid:hover,
-.pregunta .entrada:hover::-moz-placeholder,
-.enviar::before,
-.botones .boton.cotiza,
-.botones .boton.inventario,
-.cover .titulo,
-.cover .parrafo,
-.enlace.externo.inventario,
-.link-01 .menu .enlaces .item:nth-child(1) a,
-.link-02 .menu .enlaces .item:nth-child(2) a,
-.link-03 .menu .enlaces .item:nth-child(3) a,
-.link-04 .menu .enlaces .item:nth-child(4) a,
-.link-05 .menu .enlaces .item:nth-child(5) a,
-.link-06 .menu .enlaces .item:nth-child(6) a,
-.link-07 .menu .enlaces .item:nth-child(7) a,
-.link-08 .menu .enlaces .item:nth-child(8) a,
-.modal-content .encabezado .btn,
-.consejos .cover .icono::before,
-.politicas .cover .icono::before,
-.formulario.servicio-cliente .enviar,
-.seleccion.formulario.activo .titulo,
-.alcance .activo.btn
-{  color: rgb(250, 250, 250);  }
-
-.color10,
-.color-blanco,
-.enlace:hover,
-.menu-burger,
-.activo.enlaces .enlace,
-.titulo.video,
-.btn.video:focus .icono,
-.servicios .titulo.principal,
-.servicio:hover .titulo,
-.contenido .enlace,
-.equipo .titulo,
-.titulo.principal,
-.piepagina,
-.piepagina .parrafo,
-.piepagina .titulo,
-.piepagina .etiqueta,
-.piepagina .enlace,
-.pregunta .entrada:valid,
-.pregunta .entrada:valid:hover,
-.pregunta .entrada:hover:-ms-input-placeholder,
-.enviar::before,
-.botones .boton.cotiza,
-.botones .boton.inventario,
-.cover .titulo,
-.cover .parrafo,
-.enlace.externo.inventario,
-.link-01 .menu .enlaces .item:nth-child(1) a,
-.link-02 .menu .enlaces .item:nth-child(2) a,
-.link-03 .menu .enlaces .item:nth-child(3) a,
-.link-04 .menu .enlaces .item:nth-child(4) a,
-.link-05 .menu .enlaces .item:nth-child(5) a,
-.link-06 .menu .enlaces .item:nth-child(6) a,
-.link-07 .menu .enlaces .item:nth-child(7) a,
-.link-08 .menu .enlaces .item:nth-child(8) a,
-.modal-content .encabezado .btn,
-.consejos .cover .icono::before,
-.politicas .cover .icono::before,
-.formulario.servicio-cliente .enviar,
-.seleccion.formulario.activo .titulo,
-.alcance .activo.btn
-{  color: rgb(250, 250, 250);  }
 
 .color10,
 .color-blanco,
@@ -405,7 +241,8 @@ body,
 .politicas .cover .icono::before,
 .formulario.servicio-cliente .enviar,
 .seleccion.formulario.activo .titulo,
-.alcance .activo.btn
+.alcance .activo.btn,
+.servicio:hover .icono
 {  color: rgb(250, 250, 250);  }
 .servicio:hover .svg-img path
 {  fill: rgb(250, 250, 250);}
@@ -748,6 +585,14 @@ body::after,
 .grupo-entrada::before,
 .grupo-entrada::after{
   font-family: 'FontAwesome';
+}
+
+.aczfont::before{
+  color: inherit;
+}
+
+.servicio .aczfont::before{
+  font-size: 4em;
 }
 
 
@@ -1429,6 +1274,12 @@ a.industrial.izquierda {
   min-height: initial;
 }
 
+.seccion.servicios {
+  font-size: 0px;
+  letter-spacing: -1px;
+  word-spacing: 0px;
+}
+
 .servicios .titulo.principal {
   padding: 1em;
   background-size: 100% 100vh;
@@ -1486,6 +1337,8 @@ a.industrial.izquierda {
   padding: 0.8em 2em;
   box-shadow: inset 0 5em 0 rgba(255, 255, 255, 0);
 }
+
+
 
 
 /*===================== = QUIENES SOMOS*/
