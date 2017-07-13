@@ -2,8 +2,12 @@
 
   <section class="banner">
     <div class="grupo-video">
-      <?php  echo do_shortcode("[video loop='on' preload='metadata' autoplay='on' muted='true' mp4='http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/video/aircarrier-video.mp4' ogg='http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/video/aircarrier-video.ogv' webm='http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/video/aircarrier-video.webm']");
-      ?>
+      <video class="video-background" loop muted preload autoplay poster="img/video-cover-aircarrier.jpg">
+        <source src="https://aircarrierzf.com.co/video/aircarrier-video.mp4" type="video/mp4">
+        <source src="https://aircarrierzf.com.co/video/aircarrier-video..webm" type="video/webm">
+        <source src="https://aircarrierzf.com.co/video/aircarrier-video..ogv" type="video/ogg">
+       Tu navegador no soporta HTML5 Video  
+      </video>
       <h3 class="titulo video">
         soluciones a la medida de tus necesidades
         <button class="btn video">
@@ -34,7 +38,7 @@
 
         <article class="servicio <?php echo the_field('clase_servicio'); ?>">
           <figure class="icono svg">
-            <?php echo the_field('icono'); ?>
+            <?php echo the_field('icono'); ?> 
             <span class="aczfont <?php echo the_field('clase_icono'); ?> "></span>
           </figure>
           <h4 class="titulo">
@@ -50,6 +54,49 @@
       <?php wp_reset_query(); ?>
 
     </section>
+
+
+    <?php
+
+      query_posts( array
+
+      ( 
+        'post_type' => 'pop_ups',
+        'showposts' => 1,
+        'order'    => 'ASC'
+       ));
+
+     ?>
+    <?php if(have_posts()): while (have_posts()) : the_post(); ?>    
+
+      <section class="seccion equipo">
+        <h4 class="titulo">
+          <?php echo the_field('popup_titulo'); ?>
+        </h4>
+        <figure class="imagen">
+          <style>
+            .equipo .imagen {
+              background-image: url('<?php echo the_field('popup_img01_big'); ?>');
+             }
+             @media (max-width: 720px) {
+              .equipo .imagen {
+                background-image: url('<?php echo the_field('popup_img01_tiny'); ?>');
+               }              
+             }
+          </style>
+        </figure>
+        <article class="articulo">
+          <?php echo the_field('popup_texto01'); ?>      
+        </article>    
+        <button class="enlace boton modal equipo">
+          CONOCE NUESTRO EQUIPO DE TRABAJO
+        </button> 
+      </section>
+
+    <?php endwhile; endif; ?>
+
+    <?php wp_reset_query(); ?>
+
     <section class="seccion equipo">
       <h4 class="titulo">
         NUESTRO EQUIPO DE TRABAJO.
@@ -71,6 +118,7 @@
         CONOCE NUESTRO EQUIPO DE TRABAJO
       </button> 
     </section>
+
     <section class="seccion ventajas">
       <h3 class="titulo principal">
         <span>NUESTRA</span> 

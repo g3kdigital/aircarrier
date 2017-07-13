@@ -140,6 +140,7 @@ body,
 .proyectos .titulo,
 .proyectos .articulo .titulo,
 .parrafo,
+.equipo p,
 .listado,
 .botones .boton.inventario::before,
 .enlace.externo.inventario::before,
@@ -179,6 +180,7 @@ body,
 .formulario.logistica .titulo,
 .alcance .btn,
 .seccion.equipo b,
+.seccion.equipo strong em,
 .diligenciar.formularios .formulario.logistica .checkbox .trigger-politica,
 .articulos.logistic .nombre-empresa b,
 .servicio.logistica .icono {
@@ -1264,7 +1266,11 @@ a.industrial.izquierda {
 
 .seccion.equipo strong,
 .seccion.equipo b{
-    font-weight: 600;
+  font-weight: 600;
+}
+
+.seccion.equipo em{
+  font-style: normal;
 }
 
 
@@ -1359,7 +1365,8 @@ a.industrial.izquierda {
   text-align: justify;
 }
 
-.equipo .parrafo {
+.equipo .parrafo,
+.equipo p {
   max-width: 50em;
   padding: 0.8em 0 0.5em;
 }
