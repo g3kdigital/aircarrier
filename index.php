@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<!--=================================
+  VIDEO BANNER 
+  =================================-->
+
   <section class="banner">
     <div class="grupo-video">
       <video class="video-background" loop muted preload autoplay poster="img/video-cover-aircarrier.jpg">
@@ -16,6 +20,10 @@
       </h3>
     </div>
   </section>
+
+  <!--=================================
+  SERVICIOS
+  =================================-->
 
   <main class="contenido inicio">
     <section class="seccion servicios">
@@ -39,7 +47,6 @@
         <article class="servicio <?php echo the_field('clase_servicio'); ?>">
           <figure class="icono svg">
             <?php echo the_field('icono'); ?> 
-            <span class="aczfont <?php echo the_field('clase_icono'); ?> "></span>
           </figure>
           <h4 class="titulo">
             <?php echo the_title(); ?>
@@ -55,7 +62,9 @@
 
     </section>
 
-
+    <!--=================================
+    NUESTRO EQUIPO DE TRABAJO 
+    =================================-->
     <?php
 
       query_posts( array

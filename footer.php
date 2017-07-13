@@ -109,6 +109,24 @@
     <div class="modal-content">
       <section class="contenido">
         <article class="grupo equipo">
+
+        <?php
+
+          query_posts( array
+
+          ( 
+            'post_type' => 'page',
+            'page_id' => 52
+           ));
+
+        ?>
+        <?php if(have_posts()): while (have_posts()) : the_post(); ?>    
+
+          <?php echo the_title(); ?>
+
+        <?php endwhile; endif; ?>
+        <?php wp_reset_query(); ?>
+
           <h5 class="encabezado equipo">
             <span class="menor">NUESTRO</span>
             <b class="mayor">EQUIPO DE TRABAJO</b>
@@ -126,6 +144,79 @@
             <p class="parrafo">
               Las personas que integran nuestro equipo de trabajo se destacan por sus valores de integridad, honestidad, sentido de pertenencia y respeto, los cuales reflejan la filosofía de nuestra organización.
             </p>
+
+            
+
+            <?php
+
+            $cat_terms = get_terms(
+              array('organigrama'),
+              array(
+               'hide_empty'    => false,
+               'orderby'       => 'name',
+               'order'         => 'ASC'
+               //'number'        => 6 specify yours
+                                    )
+              );
+
+            if( $cat_terms ) :
+
+              foreach( $cat_terms as $term ) :
+
+             echo '<div class="fila '.$term->slug.' ">';
+
+            //var_dump( $term );
+             echo '<h6 class="sub titulo">'. $term->name .'</h6>';
+
+             $args = array(
+              'post_type'         => 'organigrama',
+              'post_status'       => 'publish',
+              "order"             => "ASC",
+              'ignore_sticky_posts'   => true, //caller_get_posts is deprecated since 3.1
+              'tax_query'         => array(
+               array(
+                'taxonomy'        => 'organigrama',
+                'field'           => 'slug',
+                'terms'           => $term->slug,
+                ),
+               ),
+              );
+
+             $_posts = new WP_Query( $args );
+
+              if( $_posts->have_posts() ) :
+                while( $_posts->have_posts() ) : $_posts->the_post();   
+
+                echo 
+                '<p>'.get_field('empleado_cargo').'</p>
+                <p>'.get_field('empleado_correo').'</p>
+                <p>'.get_field('empleado_extension').'</p>
+                <p>'.get_field('empleado_nombre').'</p>';
+
+                endwhile;
+              endif;
+             echo '</div>';
+            
+             wp_reset_postdata(); //important
+
+
+            endforeach;
+
+            endif;
+            ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
             <article class="organigrama">
               <div class="fila gerencia">
                 <h6 class="sub titulo">Dirección General</h6>
@@ -882,9 +973,9 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<!--<link rel="stylesheet" href="https://gutierrezedgar.com/aircarrier/iconos/g3k-aircarrierzfont.css">-->
-  <link rel="stylesheet" href="http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/css/g3k-aircarrierzfont.css">
+<link rel="stylesheet" href="http://localhost/aircarrierzf/wp-content/themes/aircarrierzf/css/g3k-aircarrierzfont.css">
 
 
 
  </body></html>
+
